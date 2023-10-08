@@ -17,13 +17,7 @@
                  echo 'Code Compilation is Completed Successfully!'
              }
          }
-//        stage('Code QA Execution') {
-//            steps {
-//                echo 'Junit Test case check in Progress!'
-//                sh 'mvn clean test'
-//               echo 'Junit Test case check Completed!'
-//             }
-//         }
+
          stage('Code Package') {
              steps {
                  echo 'Creating War Artifact'
