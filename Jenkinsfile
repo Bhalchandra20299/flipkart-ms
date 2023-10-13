@@ -6,7 +6,7 @@
      agent any
 
      tools {
-         maven 'maven3.9.4'
+         maven 'maven_3.9.4'
      }
 
      stages {
