@@ -61,7 +61,7 @@
                          docker tag flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}  802127431620.dkr.ecr.ap-south-1.amazonaws.com/flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}
                          echo "Tagging the Docker Image: Completed"
                          echo "Push Docker Image to ECR: In Progress"
-                         docker push 802127431620.dkr.ecr.ap-south-1.amazonaws.com/flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}
+                         docker push 802127431620.dkr.ecr.ap-south-1.amazonaws.com/flipkart-ms:latest
                          echo "Push Docker Image to ECR: Completed"
                           """
                      }
