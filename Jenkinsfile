@@ -75,7 +75,7 @@
                           sh "docker login  http://13.127.147.187:8085/repository/flipkart-ms -u admin -p ${password}"
                           echo "Push Docker Image to nexus: In Progress"
                           sh "docker tag  flipkart-ms 13.127.147.187:8085/flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}"
-                          docker "push 13.127.147.187:8085/flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}"
+                          sh "docker push 13.127.147.187:8085/flipkart-ms:dev-flipkart-ms-v1.${BUILD_NUMBER}"
                           echo "Push Docker Image to nexus: Completed"
                           }
                    }
